@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="app.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="style.css"></link>
+  </head>
+  <body>
+    <h1>LOBBY</h1>
+    <h2>Game Rules:</h2>
+    <br/>
+    <p>1. There is a three-line stroy,</p>
+    <p>2. Each player would see one line of the story,</p>
+    <p>3. The players need to draw based on what they see by turn,</p>
+    <p>4. The audiences in the waiting room can guess in chat</p>
+    <br/>
+    <h3>Select your position</h3>
+    <button id="P1" class="button" onclick="location = '/player1'">Player 1</button>
+    <button id="P2" class="button" onclick="location = '/player2'">Player 2</button>
+    <button id="P3" class="button" onclick="location = '/player3'">Player 3</button>
+    <button id="audience" class="button" onclick="location = '/wait'">Audience</button>
+  </body>
+</html>

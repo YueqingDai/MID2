@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css"></link>
+  </head>
+  <body>
+    <h1>Waiting Room</h1>
+    <div class="container">
+      <!-- View chat messages here here -->
+      <div class="sub-container chat-feed">
+          <div id="sketch-holder">
+             <!-- View P5 sketch here -->
+          </div>
+          <div class="chat-box" id="chat-box-msgs">
+            <h2>Enter your Three-Line Story here:</h2>
+          </div>
+      </div>
+
+      <!-- Enter chat messages here -->
+      <div class="sub-container chat-input">
+          <input type="text" class="chat-input-name" id="name-input" placeholder="Nickname" />
+          <input type="text" class="chat-input-msg" id="msg-input" placeholder="story" />
+          <button id="send-button">Send</button>
+      </div>
+  </div>
+  </body>
+</html>
